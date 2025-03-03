@@ -52,7 +52,14 @@
 
         redis-cli -h 192.168.43.37 -p 6379 -a 37DQhAt5MBq34Lj24Ppn5LI/UZksAZJQ==
         
-        Локальное подключение: redis-cli
+Локальное подключение: 
+        
+        redis-cli
+        
+Узнать пароль: 
+        
+        grep '^requirepass' /etc/redis/redis.conf
+
 2. [ ] Пропингуем СУБД: 
 192.168.43.37:6379>
 
@@ -74,7 +81,7 @@
        Redis работает корректно.
 
 
-### Установка. Docker.
+### Установка. Docker с Redis
 
 * Выполняем загрузку образа Redis:
 
